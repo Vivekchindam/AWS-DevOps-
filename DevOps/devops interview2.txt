@@ -1,0 +1,153 @@
+ Jenkins / CI-CD Scenarios
+🔹 Jenkins pipeline works in staging but fails in production — how do you debug?
+ 🔹 Job stuck at “Waiting for executor” — what do you check?
+ 🔹 How to roll back a failed deployment?
+ 🔹 How to prevent accidental prod deployments from feature branches?
+
+🐳 Docker Scenarios
+🔹 A container keeps restarting — how do you troubleshoot?
+ 🔹 Image size is too large — how do you optimize it?
+ 🔹 Best practices for handling secrets in Docker?
+🔹 Difference between entrypoint and cmd
+
+☸️ Kubernetes Scenarios
+🔹 Pod stuck in CrashLoopBackOff — where do you begin?
+ 🔹 Rolling back a failed production deployment?
+ 🔹 Making a service cluster-internal only — how?
+ 🔹 Secret rotation without downtime — how would you approach it?
+
+☁️ AWS / Cloud Infra
+🔹 EC2 instance is unresponsive — first things to check?
+ 🔹 Performing zero-downtime deployments in AWS?
+ 🔹 Autoscaling setup based on CPU usage — how?
+
+🐧 Linux Scenarios
+🔹 Disk space is full on a production server — what do you do?
+ 🔹 A process is consuming high CPU — how do you troubleshoot it?
+ 🔹 A server is not reachable via SSH — how would you diagnose it?
+ 🔹 How do you schedule regular backups using cron?
+
+4. Can you briefly explain how does the Linux boot processing happen? 
+5. So for services to load, there is one specific service in Linux. So can you name that service?
+5. Let's say I want the Nginx to be up as soon as I boot the system. Like system comes up, it should by default start Nginx service, which I have installed. So how do I configure that to system simply? 
+6. so what all tools, linux command do you use in your day-to-day activities?  7. So when you do df, I want to see the disk with the disk format, like the format in which the disk was formatted with. So it could be ext4, it could be xfs, anything. So what all things will I pass? What arguments will I pass? 
+8. Troubleshooted Linux networking? 
+9. have you added any remote repository to your get client on the command line? 
+10. in git let's say instead of writing get remote add origin. if i give my name in place of origin will it work? 
+11. how do you create a branch? 
+12. have you ever worked with ansible? 
+13. how will u check the status of a service (e.g., nginx) running on 10 VMs using Ansible, and find out which hosts do NOT have it running.
+14. how will you write the playbook in inanceable to check that status. 
+15. You said , u worked java app deployment using maven build tool so tell me what does maven clean package command does 
+16. what mvn clear test command does 
+17. can you explain the architecture of K8S? 
+18. what kube proxy does? 
+
+JP-Morgan Interview
+
+1. You’ve deployed an app to Azure Kubernetes Service (AKS) and it fails health checks randomly. How do you debug this end-to-end?
+
+2. In a canary deployment to production, half the traffic returns 502, while others succeed. Walk us through your troubleshooting approach.
+
+3. CI/CD pipeline takes 40 mins to deploy a small change. What would you do to optimize it?
+
+4. You see high CPU usage in one pod, but logs look clean. What next?
+
+5. You’re asked to design a highly available logging system for 100+ microservices across 3 regions. What tools and architecture would you suggest?
+
+6. Production app works fine for internal users but fails for external ones (403 error). How will you isolate the issue?
+
+7. How do you ensure secure and dynamic secret rotation in Azure DevOps pipelines?
+
+8. Explain how you’d use Azure Application Gateway with Web Application Firewall for a sensitive banking application.
+
+9. During an Azure deployment, you receive intermittent DNS resolution issues. What can be the causes?
+
+10. A user reports 10-second delays every 15 minutes in an app running on AKS. No code changes happened. How would you begin RCA?
+
+11. Jenkins jobs are randomly failing at the artifact upload step. What layers would you check?
+
+12. How would you set up an automated rollback strategy in Kubernetes for failed deployments?
+
+13. Design a cost-optimized cloud architecture for an internal reporting app that runs every night and stores logs for 3 years.
+
+14. How do you handle zero-downtime database migrations in a distributed application?
+
+15. What’s your approach to disaster recovery for stateful apps running on containers?
+
+16. An Azure function is being throttled. How will you detect and fix it?
+
+17. Define a plan for blue/green deployment with rollback on Azure using Terraform and pipelines.
+
+18. How would you monitor end-to-end SLA for services involved in a payments pipeline?
+
+19. Explain the difference in scaling strategies for compute-intensive vs I/O-intensive workloads in Azure.
+
+20. Suppose your production pipeline is blocked due to missing approvals and stakeholders are unreachable. What will you do?
+
+
+
+𝐂𝐈/𝐂𝐃 𝐚𝐧𝐝 𝐏𝐢𝐩𝐞𝐥𝐢𝐧𝐞𝐬
+→ Your deployment pipeline frequently fails at random stages. How do you make it more reliable?
+→ The product team wants faster releases, but your builds are slow. How do you speed up without breaking things?
+
+𝐈𝐧𝐟𝐫𝐚𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐞 𝐚𝐬 𝐂𝐨𝐝𝐞
+→ Your Terraform script works in dev but crashes in prod. What’s your next step?
+→ A junior accidentally deleted critical infra using IaC. How do you prevent this next time?
+
+𝐌𝐨𝐧𝐢𝐭𝐨𝐫𝐢𝐧𝐠 𝐚𝐧𝐝 𝐎𝐛𝐬𝐞𝐫𝐯𝐚𝐛𝐢𝐥𝐢𝐭𝐲
+→ A service went down at 2 AM. You weren’t alerted. What would you fix in your monitoring setup?
+→ You have logs, metrics, traces — but you’re still blind during outages. What’s missing?
+
+𝐂𝐨𝐧𝐭𝐚𝐢𝐧𝐞𝐫𝐢𝐬𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐊𝐮𝐛𝐞𝐫𝐧𝐞𝐭𝐞𝐬
+→ Your Kubernetes cluster runs out of resources often. How would you manage and optimise it?
+→ One pod works, the other fails with the same image. How would you debug it?
+
+𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 𝐚𝐧𝐝 𝐀𝐜𝐜𝐞𝐬𝐬 𝐂𝐨𝐧𝐭𝐫𝐨𝐥
+→ Developers have too many permissions in production. How would you enforce least privilege?
+→ A secret got exposed in a Git commit. What steps would you take now and for future protection?
+
+𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐂𝐮𝐥𝐭𝐮𝐫𝐞
+→ Developers blame Ops. Ops blame Dev. The release is stuck. How would you bring ownership and alignment?
+→ Your team is stuck firefighting. How would you build a culture of automation and stability?
+
+Real DevOps isn't just tools and YAML. It's owning the system end-to-end. It's being the calm in chaos. It's learning the hard way and still showing up.
+
+
+Which DevOps tools have you worked with in the last 2 years?
+- What AWS services have you used in production?
+- How do you expose a Kubernetes application to external traffic?
+- What is the purpose of a NAT Gateway?
+- How do you check running processes in Linux?
+- What command would you use to find files larger than 100MB?
+- What is the difference between Deployment and StatefulSet in Kubernetes?
+- What is a ConfigMap, and how is it different from a Secret?
+- How do you check network connectivity between two servers?
+- Describe your experience with CI/CD pipelines.
+
+✅ Round 2: Technical Round (60 minutes)
+- You have an application in Account A that needs to access an S3 bucket in Account B. How would you configure this?
+- Write a Dockerfile for a Node.js application with multi-stage builds.
+- How do you handle Terraform state file corruption?
+- Your EC2 instance in a private subnet needs to download packages without NAT Gateway. What alternatives exist?
+- How do you debug a container that has exited?
+- You need to import an existing AWS VPC into Terraform. What are the steps?
+- How would you implement blue-green deployment in Kubernetes?
+- How do you manage secrets in Terraform without hardcoding them?
+- What's the difference between COPY and ADD commands in Dockerfile?
+- How would you implement cross-account resource provisioning using Terraform?
+- How would you handle secrets in a Docker container for a PHP application connecting to MySQL?
+- An S3 bucket was created via Terraform, but someone manually added a policy. How do you handle this drift?
+- How do you implement network policies to restrict pod-to-pod communication in Kubernetes?
+- Write a Python script to backup all files older than 30 days from a directory.
+- Your company's cloud costs are increasing rapidly. - How would you approach cost optimization without impacting performance?
+- How would you set up geolocation-based routing using AWS services?
+- A critical production Kubernetes cluster is experiencing multiple issues. Pods are stuck in ImagePullBackOff, some pods are being evicted, and users are reporting 503 errors from the application. What troubleshooting process will you follow, and how can to avoid this in the future?
+
+✅ Round 3: Behavioral Round
+- How do you handle a situation where you're asked to work on a technology you have no experience with?
+- Describe a time when you had to work with tight deadlines and limited resources.
+- Tell me about a mistake you made in production and how you handled it.
+- Describe the most challenging technical problem you've solved in your career.
+- How would you convince stakeholders to adopt a new technology or process?
+- Tell me about a time when you had to learn a new tool quickly to solve a business problem.

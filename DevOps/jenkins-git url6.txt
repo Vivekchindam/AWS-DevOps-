@@ -1,0 +1,269 @@
+https://github.com/javahometech/my-app/tree/master
+https://github.com/Zulaikha12/git-test ( Pipeline )
+https://github.com/PlatformxSolutions/CucumberFramework
+https://github.com/kdpthecoder/jenkins (maven project) clean package
+https://github.com/tejasgawali4/SpringWebProject (maven project) clean package
+https://github.com/scmlearningcentre/demo.git
+https://github.com/tejasgawali4/SpringWebProject
+https://github.com/jenkinsci/declarative-pipeline-migration-assistant-plugin (clean install)
+echo "Found new Commit"
+https://github.com/TechPrimers/jenkins-example  - Multi branch 
+
+https://github.com/praveenkondapally81/javaapp-cicd.git   (Maven - SnapShort Job)
+
+Maven - Project
+
+https://github.com/TechPrimers/jenkins-example (clean deploy)
+https://gitlab.com/nanuchi/techworld-js-docker-demo-app.git
+
+cat ~/.ssh/id_rsa.pub
+
+
+https://github.com/amritsql/maven_java_tutorial
+
+https://github.com/Java-Techie-jt/spring-jenkins.git
+github
+git
+top level maven
+install
+test
+install
+
+https://github.com/praveenkondapally81/sample-spring-microservices.git
+sudo chmod 666 /var/run/docker.sock
+
+cd account-service
+mvn clean install
+docker build -t praveenokia6/micro-docker .
+sudo docker push praveenokia6/micro-docker .
+
+Docker-Build - Freestyle
+https://github.com/rchidana/NodeApp
+execute shell
+docker build . -t praveenokia6/nodeapp
+
+
+
+https://github.com/samarpit1111/devops_pipeline_demo.git
+#! /bin/bash
+echo "*******-Starting CI CD Pipeline Tasks-*******"
+#-BUILD
+echo " "
+echo "..... Build Phase Started :: Compiling Source Code :: ......"
+cd java web_code
+mvn install
+
+#-Build (TEST)
+echo " "
+echo " ...... Test Phase Started :: Testing via Automated Scripts :: ......"
+cd ../integration-testing/
+mvn clean verify -P integration-test
+
+job2
+
+#! /bin/bash
+#-POSTBUILD (PROVISIONING DEPLOYMENT)
+echo ""
+echo "..... Integration Phase Started :: Copying Artifacts :: ......."
+cd java_web_code/
+/bin/cp target/wildfly-spring-boot-sample-1.0.0.war ../docker/
+echo ""
+echo "..... Provisioning Phase Started :: Building Docker Container :: ......"
+cd ../docker/
+sudo docker build -t devops_pipeline_demo .
+
+job3
+
+CONTAINER=devops_pipeline_demo
+
+RUNNING=$(sudo docker inspect --format="{{ .Stage.Running }}" $CONTAINER 2> /dev/null)
+
+if [ $? -eq 1 ]; then
+  echo "'$CONTAINER' does not exist."
+else
+  sudo docker rm -f $CONTAINER
+fi
+    
+    # run your container
+    echo ""
+    echo "..... Deployment Phase Started :: Building Docker Container :: ......"
+    sudo docker run -d -p 8180:8080 --name devops_pipeline_demo devops_pipeline_demo
+
+#-Completion
+echo "------------------------------------------------"
+echo "Deployed here: https://localhost:8180"
+
+
+build 
+execute windowsbatch command 
+echo "Firt Job : Triggered at : %date% : %time%"
+echo "Second Job : Triggered at : %date% : %time%"
+echo "Third Job : Triggered at : %date% : %time%"
+
+post build action 
+build 
+
+
+ngnix-----nginxsite
+redhat
+
+
+https://arstech.net/centos-6-error-yumrepo-error-all-mirror-urls-are-not-using-ftp-http/    [ centos 6 }
+
+
+
+git hub url
+
+https://github.com/samarpit1111/devops_pipeline_demo.git
+
+Build - execute shell
+#! /bash/bash
+echo "*******.Starting CI CD Pipeline Tasks.*******"
+#.BUILD
+echo ""
+echo "..... Build Phase Started :: Compiling Source Code :: ......"
+cd java_web_code
+mvn install
+
+#-BUILD (TEST)
+echo ""
+echo "..... Test Phase Started :: Testing via Automated Scripts :: ......"
+cd ../integration-testing/
+
+Job2
+#! /bin/bash
+#-POSTBUILD (PROVISIONING DEPLOYMENT)
+echo ""
+echo "..... Integration Phase Started :: Copying Artifacts :: ......"
+cd java_web_code/
+/bin/cp target/wildfly-spring-boot-sample-1.0.0.war ../docker/
+echo ""
+echo "..... Provisioning Phase Started :: Building Docker Container :: ......"
+cd ../docker/
+sudo docker build -t devops_pipeline_demo .
+
+job3
+CONTAINER=devops_pipeline_demo
+
+RUNNING=$(sudo docker inspect --format="{{ .State.Running }}" $CONTAINER 2> /dev/null)
+
+if [ $? -eq 1 ]; then
+ echo "'$CONTAINER' does not exist."
+else
+ sudo docker rm -f $CONTAINER
+fi
+
+  # run your container
+  echo ""
+  echo "..... Deployment Phase Started :: Building Docker Container :: ......"
+  sudo docker run -d -p 8180:8080 --name devops_pipeline_demo devops_pipeline_demo
+
+#-Completion
+echo "-----------------------------------------"
+echo "Deployed here: http://localhost:8180"
+
+mvn clean verify -P integration-test
+
+pulls the code 
+maven to install the package 
+maven install 
+passes all the test succs
+docker succ
+
+
+
+https://github.com/praveenkondapally81/sample-spring-microservices.git
+https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
+
+
+cd account-service
+mvn clean install
+docker build -t praveenokia6/newdockerproject .
+sudo docker push praveenokia6/newdockerproject
+
+microservices-project
+	
+vasudabharathkumar@gmail.com
+
+
+
+https://unix.stackexchange.com/questions/538454/cannot-use-sudo-with-users-
+
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg| sudo apt-key add
+sudo chmod 777 /etc/apt/sources.list.d/
+
+deb https://apt.kubernetes.io/ kubernetes-xenial main
+
+cat /etc/apt/source.list.d
+
+sudo apt-get install -y kubelet kubeadm kubectl kubernetes-cni
+
+sudo swapoff -a
+
+sudo kubeadm init
+
+sudo curl -sthat-i-added
+
+------------DOCKER CONTAINER DEPLOYMENT---------------------
+richardchesterwood/k8s-fleetman-webapp-angular
+docker pull richardchesterwood/k8s-fleetman-webapp-angular:release0-5
+docker container run -p 80:80 -d richardchesterwood/k8s-fleetman-webapp-angular:release0-5
+docker conatiner ls
+minikube ip ( and run woth port 80)
+
+--------------------Ubuntu jenkins ----------------------------------------------
+vi /etc/default/jenkins
+
+
+-----------------------jira--------------------
+jira_user
+Xperia@z1
+-----------------------------------------------------
+Uninstall Jenkins
+
+sudo service jenkins stop
+sudo yum clean all
+sudo yum -y remove jenkins
+sudo rm -rf /var/cache/jenkins
+sudo rm -rf /var/lib/jenkins/
+
+  sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+https://myaccount.google.com/u/0/lesssecureapps
+
+docker run --name jenkins1 -p 7080:8080 -p 49000:50000 -v vol1:/var/jenkins_home jenkins
+
+Sanjay did 
+
+docker run --name myjenkins3 -p 6070:8080 -p 49000:50000 -v volumej:/var/jenkins_home jenkins
+
+
+Changed VOlume 
+
+docker run --name jenkins2 -p 6080:8080 -p 48000:50000 -v vol1:/var/jenkins_home jenkins/jenkins
+
+to find volumes 
+find / -name jenkins job name 
+
+docker exec -it conatianer id /bin/bash
+
+https://github.com/ravdy/Docker/blob/master/Docker_Volumes/persist_apps_data_using_docker_volumes.md
+
+https://www.youtube.com/watch?v=4QODgD6wn0U   ( docker volume share )
+
+
+
+https://myaccount.google.com/lesssecureapps?pli=1
+
+
+
+Learn DevOps+AWS In This Quarantine Click on our Web to Register - http://devopsedu.in/
+Visit Our YouTube - https://youtu.be/rgoUPMF8Gc4 
+
+
+-----------------UBUNTU 20
+https://www.youtube.com/watch?v=GrI5c9PXS5k
+
+sonar-scanner -X -Dsonar.host.url=https://sonarcloud.io/ -Dsonar.projectKey=Sonar-ABAP-Test-New
+
+
+ramesh - 8688146251

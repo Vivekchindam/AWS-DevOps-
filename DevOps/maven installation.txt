@@ -1,0 +1,77 @@
+maven installation
+
+Great! Since you want the latest version of Maven on Amazon Linux 2, follow this full manual installation guide carefully:
+
+✅ Step-by-Step: Install Latest Maven on Amazon Linux 2
+🔹 1. Install Java (Required for Maven)
+bash
+Copy
+Edit
+sudo yum update -y
+sudo yum install -y java-1.8.0-openjdk-devel
+✅ Verify Java:
+
+bash
+Copy
+Edit
+java -version
+🔹 2. Download the Latest Maven Version
+As of now, the latest is Apache Maven 3.9.6, but you can always check at: https://maven.apache.org/download.cgi
+
+bash
+Copy
+Edit
+cd /opt
+sudo curl -O https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
+🔹 3. Extract Maven Archive
+bash
+Copy
+Edit
+sudo tar -xvzf apache-maven-3.9.6-bin.tar.gz
+sudo ln -s apache-maven-3.9.6 maven
+Now /opt/maven will point to your Maven installation.
+
+🔹 4. Set Environment Variables
+Create the Maven environment file:
+
+bash
+Copy
+Edit
+sudo nano /etc/profile.d/maven.sh
+Paste the following:
+
+bash
+Copy
+Edit
+export M2_HOME=/opt/maven
+export PATH=${M2_HOME}/bin:${PATH}
+Make it executable:
+
+bash
+Copy
+Edit
+sudo chmod +x /etc/profile.d/maven.sh
+source /etc/profile.d/maven.sh
+🔹 5. Confirm Maven is Installed
+bash
+Copy
+Edit
+mvn -v
+You should see output like:
+
+text
+Copy
+Edit
+Apache Maven 3.9.6
+Maven home: /opt/maven
+Java version: 1.8.0_XXX
+✅ Done!
+Let me know if you want to:
+
+Set up a newer Java version (like OpenJDK 11 or 17)
+
+Install Maven for a non-root user only
+
+Use Maven in a Jenkins pipeline setup
+
+I can help with those too.

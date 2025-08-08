@@ -1,0 +1,32 @@
+docker run --it ubuntu /bin/bash
+docker run --name -it ubuntu /bin/bash
+docker ps
+docker ps -a
+docker start container id
+dcoker attach container id
+vi Dockerfile
+docker build -t (imagename) .
+
+docker run – Runs a command in a new container.
+docker start – Starts one or more stopped containers
+docker stop – Stops one or more running containers
+docker build – Builds an image form a Docker file
+docker pull – Pulls an image or a repository from a registry
+docker push – Pushes an image or a repository to a registry
+docker export – Exports a container’s filesystem as a tar archive
+docker exec – Runs a command in a run-time container
+docker search – Searches the Docker Hub for images
+docker attach – Attaches to a running container
+docker commit – Creates a new image from a container’s changes
+
+Docker Volume
+
+docker volume create	Create a volume
+docker volume inspect	Display detailed information on one or more volumes
+docker volume ls	List volumes
+docker volume prune	Remove all unused local volumes
+docker volume rm	Remove one or more volumes
+
+
+
+

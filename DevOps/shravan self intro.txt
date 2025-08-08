@@ -1,0 +1,51 @@
+Over the past five years, I've had been working with cross-functional teams in various organizations from startups, where I've been responsible for implementing DevOps practices and tools to accelerate delivery and enhance the reliability of applications.
+
+My experience in building and maintaining CI/CD pipelines to reducing time-to-market, and ensuring consistent and high-quality releases. I've worked extensively with tools like Jenkins, bit-bucket,GitLab CI/CD, and CircleCI to automate the build, test, and deployment processes.
+
+Containerization and orchestration have been at the core of my work, and I've  managed Docker containers and utilized Kubernetes for efficient scaling, high availability. I have been managing cloud-based infrastructure, primarily on AWS, and have leveraged Infrastructure as Code (IaC) with Terraform for deployments and backups.
+
+Even on Cloud, we take care of writing CloudFormation templates are setting up lot of EC2 instances VPCs, SNS, SQS, and lot more other different AWS services. Apart from this, I take care of working on ansible where we have lots of configuration management. 
+
+So writing Ansible playbooks and setting up, automated way to build the infrastructure is one responsibility. I also recently started working on Docker and Kubernetes. So Kubernetes we primarily use for orchestrating our Docker containers. 
+
+I have also worked on monitoring and logging solutions like Prometheus, Grafana, and ELK stack, which have allowed me to proactively detect and respond to incidents, ensuring the overall health and performance of the systems.
+
+comming to my work experience 
+worked as a SRE III (Site Reliability Engineering) for one year, where i have been working and taking care of 2 teams
+kenya, viyatnam, india
+
+my roles and responsibilties are
+
+Worked on Metric beat and File beat up gradation in both public and private Kafka endpoint for k8. Created Metric beat and File beat Secrets files are in Yaml. 
+Created a dashboard & Panels for the ELK Clusters.
+having a meeting with the team to take the day to day updates and tasks and disscused abouth the issue and close them.
+
+develop and maintain automation scripts, tools, and frameworks to improve operational efficiency and reduce manual intervention
+used Terraform and CloudFormation to create repeatable and version-controlled infrastructure.
+
+Configured VPC peering connections and established secure VPN connections using AWS services, enabling seamless communication between VPCs and on-premises networks.
+
+Maintained JIRA for tracking and updating project defects and tasks ensuring the successful completion of tasks in sprint.
+
+set up comprehensive monitoring and observability solutions to gain insights into the performance and health of systems.
+
+respond to incidents promptly, identify root causes, and work on remediation. They are often part of an on-call rotation to ensure 24/7 support for critical systems.
+technical documentation and provide Training to other entry and intermediate team members. 
+
+kaizen analytix
+
+Created a cluster in Amazon Open Search Service (OSS) using VPC flow Logs, Amazon CloudWatch, Lambda function, IAM Roles.
+Migrate data from Elastic search cluster to Open Search Kibana Dashboard.
+
+Implemented auto-scaling AWS Lambda functions to handle a high volume of incoming requests, resulting in improved response times and cost optimization.
+
+Created snapshots and Amazon Machine Image (AMI) of the instance for backup and created access Management (IAM) policies for delegated administration with in AWS.
+
+Used Bit bucket to manage repositories, maintained the branching and build/release strategies utilizing GIT and Bit bucket.
+
+
+
+
+
+
+

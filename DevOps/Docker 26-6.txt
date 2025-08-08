@@ -1,0 +1,33 @@
+Docker
+
+docker run -it ubuntu /bin/bash
+docker run -i -t ubuntu /bin/bash   
+-i = interactive
+-t = terminal
+
+root@yz249ab2fjkn326$ 
+
+  408  docker version
+  409  docker run -it ubuntu /bin/bash
+  410  yum update -y
+  411  docker ps
+  412  docker ps -a
+  413  docker start 59794f6691d8
+  414  docker ps
+  415  docker attach 59794f6691d8
+  416  docker images
+  417  docker ps -a
+  418  docker rm 59794f6691d8
+  419  docker run -it ubuntu /bin/bash
+  420  docker images
+  421  docker rmi bf16bdcff9c9
+  422  docker rmi -f bf16bdcff9c9
+  423  docker images
+  424  docker ps -a
+  425  docker rm 735a19d306dd
+  426  docker run --name harish -it ubuntu /bin/bash
+  427  docker ps -a
+  428  docker start harish
+  429  docker attach harish
+  430  docker rm harish
+  431  history 25

@@ -1,0 +1,66 @@
+New Programmer especially java programmers they have this question like why do we need maven for building
+project when we have eclipsen
+so what eclipse is, it is nothing but an IDE 
+IDE stands for integrated development environment 
+Eclips provides an environment for developing your project thats it, it doesnt build your code 
+but maven is used to build the code and 
+[ most of the java projects they require you to work with third-party libraries for example if you are working on spring MVC projects ( MVC Pattern stands for Model-View-Controller Pattern. )there are
+numerous dependencies that you need for this project, dependence are nothing but the libaries or the jar files so for spring there are 10 to 12 libaries 
+that you need so to use this libary you first need to download them and then you need to add those to your projects this is a tedious task
+because all of this need to be done manually 
+another problem is suppose your are working on java 8 version and for some reason you need to upgrade your project from java 8 to java 9
+in this case you again need to download and add these dependencies for the latest software version so this is not at all a good partice, where you have to do things manually 
+
+so this is were maven makes your life easer 
+maven can slove all your problems releated to dependencies you 
+need to specifly the dependencies that you want in a pom.xml file of maven
+and maven will take care of the rest 
+
+so even in the lastest stages of project you need to upgarde the version of the software that 
+your using maven will handle all issues 
+for example if there a change in the version of the software you need to make the change in the pom.xml 
+file of maven and thats it maven will automatically download if for you, this is the reason why need maven 
+
+before maven we have ant but the problem with ant was we had to write 
+very long scripts for executing our tasks for example you have to define what your tasks are 
+and when you need to execute those tasks , so this was a problem 
+with ant 
+so after that maven came 
+
+Maven a Powerful build automation tool that is primarily used for Java based Project 
+Maven addresses two criical aspects of building sofware first it describes how software is build
+and second it describes the dependencies it uses convention for build procedure and exception This command compiles the java source classes of the maven project.
+
+
+need to be written down an XML file describes the software project that is being build its 
+dependencies on the other external modules and components teh build order the directories and the required plugins 
+it comes with predefined targets for performing certain well-defined tasks such as compilation
+of code and its packaging maven dynamically downloads java libaries and maven plugins from 
+java libraries and maven plugins from one or more repositories such 
+as the maven central repository and stores them in the local cache this local cache of downloaded artifacts can 
+also be updated 
+
+
+
+mvn clean  - This command cleans the maven project by deleting the target directory. The command output relevant messages are shown below
+
+mvn compiler:compile - This command compiles the java source classes of the maven project.
+mvn compiler:testCompile- This command compiles the test classes of the maven project.
+mvn package - This command builds the maven project and packages them into a JAR, WAR, etc.
+
+mvn install- This command builds the maven project and installs the project files (JAR, WAR, pom.xml, etc) to the local repository.
+mvn deploy- This command is used to deploy the artifact to the remote repository.
+mvn validate- This command validates the maven project that everything is correct and all the necessary information is available.
+mvn dependency:tree - This command generates the dependency tree of the maven project.
+mvn dependency:analyze - This command analyzes the maven project to identify the unused declared and used undeclared dependencies. It’s useful in reducing the build size by identifying the unused dependencies and then remove it from the pom.xml
+
+mvn site:site - This command generates a site for the project. You will notice a “site” directory in the target after executing this command. There will be multiple HTML files inside the site directory that provides information related to the project.
+
+mvn test - This command is used to run the test cases of the project using the
+
+mvn compile - It’s used to compile the source Java classes of the project.
+mvn -help - This command prints the maven usage and all the available options for us to use.
+
+
+
+

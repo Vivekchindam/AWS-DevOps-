@@ -1,0 +1,133 @@
+Basic Linux Questions:
+
+What is the difference between Linux and Unix?
+---------------------------------------------
+ANS: it is an operating system like windows.Linux is process oriented operating system and is a free and open-source operating system
+unix is requires a license for use and the source code is not open to the public.
+
+Explain the Linux file system hierarchy?
+----------------------------------------
+ANS: In Linux there are some file systems they are.
+     bin: binary dirctories
+     subin: sub binary directories
+     dev: device folders
+     boot: booting directories
+     etc:
+     home: user 
+     lib: library for libraries
+     media: media files like audio,video,documents
+     sys: system files
+     tmp: temporary files
+
+How do you find the current working directory?
+---------------------------------------------
+ANS: we have to use "pwd" command for find current wrking directory.
+
+How do you check disk usage?
+----------------------------
+ANS: by using "df -h" command for check disk usage
+
+What's the difference between soft link and hard link?
+------------------------------------------------------
+ANS: In Linux, hard links and soft links (also known as symbolic links) are two different types of file links, each with its own unique characteristics. Hard links point directly to the data of a file, while soft links point to the file name or path. This means that if you delete the original file with a hard link, the data is still accessible through the hard link, whereas deleting the original file with a soft link will break the link. 
+
+How do you list hidden files?
+-----------------------------
+ANS: type "ls -la" and enter
+
+What is a symbolic link, and how do you create one?
+---------------------------------------------------
+ANS: symbolic link is a file that acts as a shortcut to the original file or directories.
+     it access to allowing files from different locations without any duplicating them.
+     it is also called as soft link.
+     and "ln -s" this is command is used for creating symlink.
+
+What is the output of ls -l?
+----------------------------
+ANS: this command is shows "detailed listing" the existing files in that directory or folder.
+
+🛠️ File Permissions & Ownership
+How do file permissions work in Linux?
+ANS: in Linux file permissions is defined as it giving of permission to the such file or directory in read, write, and execute functions
+     here we have 3 major permissions in Linux 
+they are:
+
+     READ:  its only read ==> value is =4
+     WRITE:  its only write ==> value is=2
+     EXECUTE: its only execute ==> value is=1 
+
+
+Explain the meaning of rwxr-xr--.
+ANS: here r=read
+          w=write
+          x=execute
+
+What does the chmod 755 command do?
+ANS: this command is give permission to the file or directory
+     like "rwx-rx--rx"
+
+How do you change file ownership? What’s the difference between chown and chgrp?
+
+How can you recursively change permissions or ownership?
+ANS: to give permission to file or directory==> we have to use "chmod" this command
+     to change ownership of directory ==> we have to use "chown" this command
+
+⚙️ Process Management
+How do you view running processes?
+
+What does top, htop, and ps do?
+
+How do you kill a process by name or PID?
+
+What's the difference between nice and renice?
+
+How would you find and troubleshoot a zombie process?
+
+📂 Networking & Services
+How do you check open ports in Linux?
+
+What does netstat, ss, and lsof do?
+
+How do you restart a service in systemd?
+
+How do you check if a port is listening?
+
+How do you test connectivity using ping, telnet, curl, or nc?
+
+🔄 Scheduling and Automation
+What is cron? How do you set a cron job?
+
+What is the syntax of a crontab file?
+
+How do you list, edit, and remove crontab entries?
+
+What's the difference between cron and at?
+
+🐧 System Monitoring & Logs
+Where are system logs stored in Linux?
+
+How do you monitor memory usage, CPU load, and disk I/O?
+
+How can you watch real-time log updates?
+
+How do you find which process is consuming the most memory?
+
+📦 Package Management
+How do you install, remove, or update packages in Debian/Ubuntu (apt)?
+
+Same for RedHat/CentOS (yum/dnf)?
+
+How do you search for packages?
+
+What is the difference between dpkg and apt?
+
+🧪 Scripting & Automation
+How do you write a basic bash script?
+
+How do you make a script executable?
+
+What’s the difference between #!/bin/bash and #!/bin/sh?
+
+How do you pass arguments to a shell script?
+
+What are environment variables and how do you set them?

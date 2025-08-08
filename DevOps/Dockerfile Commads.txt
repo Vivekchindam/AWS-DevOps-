@@ -1,0 +1,45 @@
+FROM - it defines the base image to use to start the build process
+EXAMPLE -
+FROM ubuntu 
+
+RUN - run commnad is the central executing directive for Dockefile, it takes a command as its argument and runs it to form the image 
+EXAMPLE -
+RUN apt-get install -y python
+
+MAINTAINER- who maintain the genranted image
+EXAMPLE -
+MAINTAINER - praveen
+
+ADD - it basically copies the files from the source on the host into the container own filesytem at the set destination ( path )
+EXAMPLE -
+ADD /my-project/my-app
+
+CMD - the command CMD, similar to RUN, can be used for executing a specfic command,however unlike RUN it is not executed during build ( sets default command and/or parameters, which can be overwritten from command line when docker container runs )
+EXAMPLE-
+CMD "echo" Welcome to"
+
+ENTRYPOINT- is used to overwrite what ever function  CMD command does 
+when you are finished building docker image then the command which is specfied with the entrypoint that will be the first to execute then you run the docker container of that image - it can over write CMD command ( configures a container that will run as an executable )
+EXAMPLE -
+ENTRYPOINT echo "Hello world"
+
+ENV - ENV command is used to set the envirnment variable (one or more) these varaibles consist of key value pairs which can be accessed within the container by scripts and application 
+EXAMPLE - 
+ENV VAR_NAME_2 6
+
+EXPOSE- EXPOSE command is used to associate a specfied port to enable networking between the running process insdie the container and the outside ( i.e the host )
+EXAMPLE 
+EXPOSE 8080
+
+USER - the USER is used to set the username which is to run the container based on the image being built
+EXAMPLE -
+USER 
+
+VOLUME - VOLUME cmannd is used to anable access from your container to a  directory on the host machine
+EXAMPLE -
+VOLUME ["/myfile"]
+
+WORKDIR - WORKDIR directive is used o set where the command defined wih CMD is to be executed
+EXAMPLE -
+WORKDIR /path WORKDIR ~/
+
